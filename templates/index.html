@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aya Mekni | AI Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/ph.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#competencies">Competencies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+    <h1 class="name-highlight">Aya Mekni</h1>
+      <h1 class="animated-typing">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </h1>
+      <div class="intro-banner">
+  <p>
+    Passionate AI & Data Science engineering student skilled in Python, SQL, and data frameworks like Pandas and Scikit-learn. Experienced in processing and analyzing large datasets to uncover insights. <br>
+    <span class="highlight">Currently seeking a summer internship to apply and grow my skills in real-world data-driven projects.</span>
+  </p>
+</div>
+
+      <a href="{{ url_for('download_cv') }}" class="btn">Download My CV</a>
+    </div>
+  </header>
+  
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+      <div class="about-info">
+        <ul class="about-list">
+          <li><strong>Name:</strong> Aya Mekni</li>
+          <li><strong>Born:</strong> 2001</li>
+          <li><strong>Birthplace:</strong> Monastir, Tunisia 🇹🇳</li>
+          <li><strong>Email:</strong> aya.mekni@esprim.tn</li>
+          <li><strong>Current status:</strong> Final-year AI & Data Science engineering student at ESPRIM</li>
+        </ul>
+      </div>
+      <div class="about-photo">
+        <img src="{{ url_for('static', filename='taswira.png') }}" alt="Aya" />
+      </div>
+    </div>
+  </section>
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <p class="section-subtitle">A list of the technologies and tools I use to build intelligent, scalable systems.</p>
+  <div class="skills-filter">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="language">Languages</button>
+    <button data-filter="framework">Frameworks</button>
+    <button data-filter="datascience">Data Science</button>
+    <button data-filter="tools">Tools</button>
+  </div>
+  <div class="skills-grid">
+    <!-- Languages -->
+    <span class="skill language" data-tooltip="High-level language for AI">Python</span>
+    <span class="skill language" data-tooltip="Frontend scripting">JavaScript</span>
+    <span class="skill language" data-tooltip="Backend scripting language">PHP</span>
+    <span class="skill language" data-tooltip="Structured Query Language for databases">SQL</span>
+    <span class="skill language" data-tooltip="Oracle Procedural Language for SQL">PL/SQL</span>
+    <span class="skill language" data-tooltip="Markup language for web pages">HTML</span>
+    <span class="skill language" data-tooltip="Styling language for web design">CSS</span>
+    <span class="skill language" data-tooltip="Microsoft framework for building applications">.NET</span>
+
+    <!-- Data Science -->
+    <span class="skill datascience" data-tooltip="Deep learning framework">TensorFlow</span>
+    <span class="skill datascience" data-tooltip="Neural network API">Keras</span>
+    <span class="skill datascience" data-tooltip="Data manipulation tool">Pandas</span>
+    <span class="skill datascience" data-tooltip="Numerical computing">NumPy</span>
+    <span class="skill datascience" data-tooltip="Image processing library">OpenCV</span>
+    <span class="skill datascience" data-tooltip="Object detection framework">YOLOv5</span>
+    <span class="skill datascience" data-tooltip="Machine learning toolkit">Scikit-learn</span>
+    <span class="skill datascience" data-tooltip="Big Data processing framework">Hadoop</span>
+    <span class="skill datascience" data-tooltip="Data visualization tool">Tableau</span>
+    <span class="skill datascience" data-tooltip="IDE for R programming">RStudio</span>
+    <span class="skill datascience" data-tooltip="Interactive computing environment for Python/R">Jupyter Notebook</span>
+
+    <!-- Frameworks -->
+    <span class="skill framework" data-tooltip="Python web framework">Flask</span>
+    <span class="skill framework" data-tooltip="Advanced Python web framework">Django</span>
+    <span class="skill framework" data-tooltip="JavaScript UI library">React</span>
+    <span class="skill framework" data-tooltip="PHP framework for web applications">Laravel</span>
+    <span class="skill framework" data-tooltip="Java framework for building microservices">Spring Boot</span>
+    <span class="skill framework" data-tooltip="CSS framework for responsive design">Bootstrap</span>
+    <span class="skill framework" data-tooltip="API testing tool">Postman</span>
+    <span class="skill framework" data-tooltip="API documentation tool">Swagger</span>
+    <span class="skill framework" data-tooltip="Utility-first CSS framework">Tailwind CSS</span>
+<span class="skill framework" data-tooltip="CSS framework">Bootstrap</span>
+<span class="skill framework" data-tooltip="Fast API framework for Python">FastAPI</span>
+
+    <!-- Tools -->
+    <span class="skill tools" data-tooltip="NoSQL database">MongoDB</span>
+    <span class="skill tools" data-tooltip="Data visualization">Power BI</span>
+    <span class="skill tools" data-tooltip="Version control system">Git</span>
+    <span class="skill tools" data-tooltip="Agile project management framework">Scrum</span>
+    <span class="skill tools" data-tooltip="Issue tracking and project management tool">Jira</span>
+    <span class="skill tools" data-tooltip="Java IDE by JetBrains">IntelliJ</span>
+    <span class="skill tools" data-tooltip="Package manager for Node.js">NPM</span>
+<span class="skill tools" data-tooltip="Python distribution for scientific computing">Anaconda</span>
+<span class="skill tools" data-tooltip="Cloud-based Jupyter environment">Google Colab</span>
+<span class="skill tools" data-tooltip="Python notebook editor">Jupyter</span>
+<span class="skill tools" data-tooltip="Cloud computing services">Google Cloud</span>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Work Experience</h2>
+  <div class="experience-wrapper">
+    <div class="experience-card">
+      <h3>FULL STACK INTERN – EVENTIFY PLATFORM</h3>
+      <ul class="experience-list">
+        <li><strong>Developed and maintained Eventify</strong>, a web platform for event creation, participation, and management using Laravel and Tailwind CSS.</li>
+        <li>Built Blade templates for responsive UI and implemented role-based access for event management.</li>
+        <li>Enhanced event browsing with localization features and used Git for version control.</li>
+      </ul>
+      <p><span class="highlight-label">Company:</span> Anypli, Monastir</p>
+      <p><span class="highlight-label">Duration:</span> July – August 2024</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="competencies" class="section">
+  <h2>Core Competencies</h2>
+  <div class="competency-grid">
+    <div class="competency-card">
+      <i class="ph ph-robot"></i>
+      <span>AI</span>
+    </div>
+    <div class="competency-card">
+      <i class="ph ph-brain"></i>
+      <span>ML</span>
+    </div>
+    <div class="competency-card">
+      <i class="ph ph-code"></i>
+      <span>Dev</span>
+    </div>
+    <div class="competency-card">
+      <i class="ph ph-magic-wand"></i>
+      <span>UX</span>
+    </div>
+    <div class="competency-card">
+      <i class="ph ph-database"></i>
+      <span>Data</span>
+    </div>
+    <div class="competency-card">
+      <i class="ph ph-cloud"></i>
+      <span>Cloud</span>
+    </div>
+  </div>
+</section>
+
+
+
+ <section id="projects" class="section project-section">
+  <h2>Projects</h2>
+  <p class="project-subtitle">Explore my portfolio of AI, machine learning, and software development projects.</p>
+  <input type="text" id="projectSearch" placeholder="Search by name or tech..." class="project-search" />
+
+  <div class="project-grid" id="projectList">
+    <div class="project-card" data-tags="TensorFlow Keras Django React MongoDB JWT NumPy Pandas Git Trello">
+      <h3>Trash to Cash </h3>
+      <p>Developed a CNN to detect recycling logos. Full-stack web app with camera scanning and predictions.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">TensorFlow</span>
+        <span class="tech-badge">Keras</span>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">React.js</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">JWT</span>
+        <span class="tech-badge">NumPy</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Git</span>
+        <span class="tech-badge">Trello</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="Power BI DAX Data Cleaning Storytelling">
+      <h3>Sales Trend Analysis </h3>
+      <p>Interactive Power BI dashboard showing sales trends. Used DAX, Power Query, and storytelling visuals.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">Power BI</span>
+        <span class="tech-badge">DAX</span>
+        <span class="tech-badge">Data Cleaning</span>
+        <span class="tech-badge">Storytelling</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="Flask Python Selenium BeautifulSoup MongoDB">
+      <h3>JobNest</h3>
+      <p>Scraped job listings and stored them using Flask & MongoDB. Automated pipelines with Beautiful Soup + Selenium.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Selenium</span>
+        <span class="tech-badge">Beautiful Soup</span>
+        <span class="tech-badge">MongoDB</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="TensorFlow Keras OpenCV">
+      <h3>Lung Cancer Detection</h3>
+      <p>Built deep learning models to classify CT images. Applied augmentation and pretrained models.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">TensorFlow</span>
+        <span class="tech-badge">Keras</span>
+        <span class="tech-badge">OpenCV</span>
+        <span class="tech-badge">NumPy</span>
+        <span class="tech-badge">Pandas</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="Spring Boot Java JPA MySQL">
+      <h3>University Housing System</h3>
+      <p>Spring Boot web app for managing room assignments. REST APIs with full CRUD.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">Spring Data JPA</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">Swagger</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="CNN Autoencoder Librosa EmoDB">
+      <h3>Emotional Speech Recognition</h3>
+      <p>Emotion classification using autoencoders + CNN on EmoDB and RAVDESS datasets.</p>
+      <div class="tech-stack">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">TensorFlow</span>
+        <span class="tech-badge">Keras</span>
+        <span class="tech-badge">Librosa</span>
+        <span class="tech-badge">CNN</span>
+        <span class="tech-badge">Autoencoder</span>
+      </div>
+    </div>
+    <div class="project-card" data-tags="ASP.NET C# MVC EFCore SQL Razor Bootstrap Authentication CRUD">
+  <h3>Gestion des Présentateurs </h3>
+  <p>Web app to manage circus presenters and roles with secure role-based authentication, CRUD operations, and dashboards.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">C#</span>
+    <span class="tech-badge">ASP.NET Core MVC</span>
+    <span class="tech-badge">Entity Framework Core</span>
+    <span class="tech-badge">SQL Server</span>
+    <span class="tech-badge">Razor</span>
+    <span class="tech-badge">Bootstrap</span>
+    <span class="tech-badge">Authentication</span>
+  </div>
+</div>
+
+   
+  </div>
+</section>
+<section id="certifications" class="section">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certifications-grid">
+    <div class="cert-card">
+      <h3>Generative AI with Diffusion Models</h3>
+      <p><strong>Platform:</strong> NVIDIA – <em>Juin 2025</em></p>
+      <p><strong>ID:</strong> FodSKs02T6mAQGmyPZNQbg</p>
+    </div>
+    <div class="cert-card">
+      <h3>Introduction to Power BI</h3>
+      <p><strong>Platform:</strong> DataCamp – <em>May 2025</em></p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Applications of AI for Predictive Maintenance</h3>
+      <p><strong>Platform:</strong> NVIDIA – <em>April 2025</em></p>
+      <p><strong>ID:</strong> 38XtOjStR1qLXwTBdn0PuA</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Fundamentals of Deep Learning</h3>
+      <p><strong>Platform:</strong> NVIDIA – <em>March 2025</em></p>
+      <p><strong>ID:</strong> 1tO0Ys3ITkGJkXM3sgBKrQ</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>AI-900: Azure AI Fundamentals</h3>
+      <p><strong>Platform:</strong> KodeKloud – <em>Feb 2025</em></p>
+      <p><strong>ID:</strong> e0025655-a0cc-43c2-95ef-7a3f7158ea09</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Docker for Absolute Beginners</h3>
+      <p><strong>Platform:</strong> KodeKloud – <em>Feb 2025</em></p>
+      <p><strong>ID:</strong> 7b53b38f-2e3a-4a55-931f-9dbb5ea97523</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Fundamentals of DevOps</h3>
+      <p><strong>Platform:</strong> KodeKloud – <em>Feb 2025</em></p>
+      <p><strong>ID:</strong> 204c9f91-57a6-4116-82c6-1f32db477ccf</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Shell Scripts for Beginners</h3>
+      <p><strong>Platform:</strong> KodeKloud – <em>Feb 2025</em></p>
+      <p><strong>ID:</strong> d97ec4c1-c8a9-4867-8c3e-f65393899d30</p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Scrum Fundamentals Certified (SFC™)</h3>
+      <p><strong>Platform:</strong> SCRUMstudy – <em>April 2024</em></p>
+      <p><strong>ID:</strong> 1025380</p>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+
+  <section id="contact" class="section">
+  <h2>Contact Dock</h2>
+  <p class="subtitle">Connect with me for collaborations or opportunities</p>
+  <div class="contact-container">
+    <div class="contact-left">
+      <h3>Communication Channels</h3>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> aya.mekni@esprim.tn</li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aya-mekni-0b0783283/">linkedin.com/in/aya-mekni</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ayamekni">github.com/ayamekni</a></li>
+        <li><strong>Location:</strong> Monastir, Tunisia</li>
+      </ul>
+      <a href="{{ url_for('download_cv') }}" class="btn download-btn">Download CV</a>
+    </div>
+
+    <div class="chatbot">
+      <h3>Who is Aya?</h3>
+      <div id="chat-window" class="chat-window">
+        <div class="bot">Ask me something about Aya!</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Ask a question..." />
+        <button onclick="handleChat()">➤</button>
+      </div>
+      <div class="suggestions">
+        <button onclick="preset('Who is Aya?')">Who is Aya?</button>
+        <button onclick="preset('What can she do?')">What can she do?</button>
+        <button onclick="preset('What makes Aya unique?')">What makes Aya unique?</button>
+
+        <button onclick="preset('How can I hire her?')">How can I hire her?</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Aya Mekni</p>
+  </footer>
+
+  <a href="#" class="back-to-top" title="Back to top">⬆️</a>
+
+  <script>
+    const textElement = document.getElementById("typed-text");
+    const phrases = [
+      "AI engineer in training, passionate about deep learning",
+      "Software Engineer | Full Stack Developer",
+      "Interested in AI and Machine Learning",
+      "Ready to tackle new challenges!"
+    ];
+    let currentPhrase = 0;
+    let currentChar = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const fullText = phrases[currentPhrase];
+      const currentText = fullText.substring(0, currentChar);
+      textElement.innerText = currentText;
+
+      if (!isDeleting && currentChar < fullText.length) {
+        currentChar++;
+        setTimeout(typeEffect, 50);
+      } else if (isDeleting && currentChar > 0) {
+        currentChar--;
+        setTimeout(typeEffect, 25);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) currentPhrase = (currentPhrase + 1) % phrases.length;
+        setTimeout(typeEffect, 1000);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+
+  <script src="{{ url_for('static', filename='scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='background.js') }}"></script>
+</body>
+<script>
+  const chatWindow = document.getElementById("chat-window");
+  const input = document.getElementById("user-input");
+
+  const responses = {
+    "who is aya?": "Aya is a passionate AI and Data Science student proficient in Python, TensorFlow, Computer Vision, NLP, and more!",
+    "what can she do?": "She builds intelligent, user-focused applications by combining deep learning with modern web frameworks like Flask and React — turning complex AI models into impactful real-world solutions.",
+    "what makes aya unique?": "Aya's unique blend of technical skills, creativity, and problem-solving mindset allows her to tackle complex challenges in AI and software development. She's always eager to learn and innovate!",
+    "how can i hire her?": "You can reach out via email or LinkedIn — she's open to exciting collaborations!"
+  };
+
+  function addMessage(sender, text) {
+    const msg = document.createElement("div");
+    msg.className = sender;
+    msg.innerText = text;
+    chatWindow.appendChild(msg);
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+  }
+
+  function handleChat() {
+    const question = input.value.trim();
+    if (!question) return;
+    addMessage("user", question);
+    input.value = "";
+
+    const reply = responses[question.toLowerCase()] || 
+      "I'm not sure about that, but feel free to ask about Aya's skills, projects, or how to get in touch!";
+    setTimeout(() => addMessage("bot", reply), 500);
+  }
+
+  function preset(text) {
+    input.value = text;
+    handleChat();
+  }
+</script>
+<script>
+  const sections = document.querySelectorAll('.section');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+<script>
+document.getElementById("projectSearch").addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  const cards = document.querySelectorAll("#projectList .card");
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    const tags = card.dataset.tags.toLowerCase();
+    const match = text.includes(query) || tags.includes(query);
+    card.style.display = match ? "block" : "none";
+  });
+});
+</script>
+
+
+
+
+
+
+
+<script>
+  const searchInput = document.getElementById("projectSearch");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    projectCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? "block" : "none";
+    });
+  });
+</script>
+
+
+
+</html>
